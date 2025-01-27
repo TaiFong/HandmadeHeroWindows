@@ -1,14 +1,12 @@
 #include <windows.h>
 
 int CALLBACK WinMain(
-    _In_  HINSTANCE hInstance,
-    _In_  HINSTANCE hPrevInstance,
-    _In_  LPSTR     lpCmdLine,
-    _In_  int       nCmdShow){
-    
+      HINSTANCE hInstance,
+      HINSTANCE hPrevInstance,
+      LPSTR     lpCmdLine,
+      int       nCmdShow){
+    OutputDebugStringA("This is the first thing we have actually printed.\n");
 }
 
 void foo(void){
-    // Function code
-    /*printf()*/
 }
