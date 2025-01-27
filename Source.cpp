@@ -10,4 +10,5 @@ int CALLBACK WinMain(
 
 void foo(void){
     // Function code
+    /*printf()*/
 }
