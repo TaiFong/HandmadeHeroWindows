@@ -6,4 +6,4 @@
 
 </div>
 
-#### The purpose of this repo is to track my progress with The Handmade Hero Project
+#### The purpose of this repo is to track my progress with The Handmade Hero Project and Learn More about C/C++
