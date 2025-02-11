@@ -1,13 +1,27 @@
 #include <windows.h>
+ 
+ WNDPROC Wndproc;
+
+LRESULT CALLBACK 
+MainWindowCallback(
+  HWND unnamedParam1,
+  UINT unnamedParam2,
+  WPARAM unnamedParam3,
+  LPARAM unnamedParam4
+)
+{...}
 
 int CALLBACK 
-WinMain(HINSTANCE hInstance,
-        HINSTANCE hPrevInstance,
-        LPSTR lpCmdLine,
-        int nCmdShow)
-{
-     MessageBox(0, "this is Handmade Hero", "Day 002",
-     MB_OK|MB_ICONINFORMATION);
+WinMain(HINSTANCE Instance,
+        HINSTANCE PrevInstance,
+        LPSTR CommandLine,
+        int ShowCode){
 
-     return 0;
+WNDCLASS WindowClass = {};
+  WindowClass.style = CS_OWNDC|CS_HREDRAW|CS_VREDRAW;
+  WindowClass.lpfnWndProc = MainWindowCallback ;
+  WindowClass.hInstance = Instance;
+  //WindowClass hIcon ;
+  WindowClass.lpszClassName = "HandmadeHeroWindowClass - Text Editor";
+        return 0;
 }
